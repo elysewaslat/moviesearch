@@ -1,3 +1,56 @@
 .moviesearch {
-    border: 1px solid red;
+    &__form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-right: 1.5rem;
+    
+        .avatar {
+            margin-top: 2rem;
+        }
+
+        &__container {
+            flex-grow: 1;
+            margin-left: 1.5rem;
+
+            &__button {
+                button {
+                    background-color: green;
+                    width: inherit;
+                    color: white;  
+                    padding: 10px 20px;
+                    margin-top: 0.5rem;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+
+            &__group {
+                input {
+                    width: 40%;
+                    padding: 1rem;
+                    box-sizing: border-box;
+                    background-color: lightgrey;
+                    border: 1px solid #AFAFAF;
+                    border-radius: 0.3rem;
+    
+                    ::placeholder {
+                        color: #323232;
+                    }
+                }
+    
+                label {
+                    display: block;
+                    margin-bottom: 0.3rem;
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                    color: silver;
+                }
+            }
+        } 
+    }
 }

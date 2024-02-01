@@ -1,7 +1,7 @@
 .movies {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid blue;
+    justify-content: center;
 
     &__movie {
         width: 200px; /* Adjust as per your design */
@@ -11,5 +11,12 @@
         box-sizing: border-box;
         display: flex;
         flex-direction: column;   
+    }
+
+    &__notfound {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 }
