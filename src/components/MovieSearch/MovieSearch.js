@@ -8,8 +8,6 @@ function MovieSearch({ updateMovies }) {
         event.preventDefault();
         const keyword = event.target.elements.comment.value;
 
-        console.log('keyword is: ' + keyword);
-
         const options = {
             method: 'GET',
             url: `https://moviesdatabase.p.rapidapi.com/titles/search/keyword/${keyword}`,
@@ -21,7 +19,6 @@ function MovieSearch({ updateMovies }) {
 
         try {
             const response = await axios.request(options);
-            console.log(response.data);
             updateMovies(response.data);
         } catch (error) {
             console.error(error);
