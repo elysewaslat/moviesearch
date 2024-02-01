@@ -3,7 +3,6 @@ import "./MovieList.scss";
 import Movie from "../Movie/Movie";
 
 function MovieList({ movies }) {
-    console.log(movies);
     if (!movies) {
         movies = {
             results: []
