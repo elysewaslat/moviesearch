@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+
+import MovieSearch from "./components/MovieSearch/MovieSearch";
+import MovieList from "./components/MovieList/MovieList";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        Replace me with Header component
+      </div>
+      <MovieSearch></MovieSearch>
+      <MovieList></MovieList>
+      <div>
+        Replace me with Footer component
+      </div>
     </div>
   );
 }
