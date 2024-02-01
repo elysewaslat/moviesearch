@@ -1,0 +1,15 @@
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+
+    &__movie {
+        width: 200px; /* Adjust as per your design */
+        margin: 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;   
+    }
+}
