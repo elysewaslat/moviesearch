@@ -1,0 +1,13 @@
+.movie {
+    display: flex;
+
+    &__item {
+        width: 400px; /* Adjust as per your design */
+        margin: 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+}
